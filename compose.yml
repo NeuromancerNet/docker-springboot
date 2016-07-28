@@ -1,0 +1,10 @@
+spring-boot-box:
+  container_name: smoketest-spring-boot-box
+  build:
+    .
+  dockerfile:
+    Dockerfile
+  volumes:
+    - ./assets:/app
+  ports:
+    - "8080:8080"
